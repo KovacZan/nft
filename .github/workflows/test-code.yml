@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@master
+      - name: get directory
+        run: pwd
       - name: Run codacy-analysis-cli
         uses: codacy/codacy-analysis-cli-action@master
         with:
