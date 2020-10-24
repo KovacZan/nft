@@ -11,3 +11,5 @@ jobs:
         uses: actions/checkout@master
       - name: Run codacy-analysis-cli
         uses: codacy/codacy-analysis-cli-action@master
+        with:
+          directory: packages/nft-base-crypto
